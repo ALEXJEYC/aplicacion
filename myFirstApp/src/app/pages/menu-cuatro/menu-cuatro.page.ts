@@ -13,4 +13,5 @@ export class MenuCuatroPage {
     // Redirecciona al usuario de vuelta al menú principal
     this.router.navigate(['/menu']);
   }
+  
 }

@@ -6,18 +6,19 @@ import { AlertController } from '@ionic/angular';
 })
 export class HelperService {
 
-  constructor(private alertService:AlertController) { }
+  constructor(private alertController:AlertController) { }
 
     sumar(val1:number,val2:number){
       var result = val1 + val2;
       return result;
     }
-
-
-    async showAlert(msg:string,title:string){
-      var alert = await this.alertService.create({cssClass:"alertClass",header:title,message:msg,subHeader:"Hola" ,buttons:['Aceptar']})
+    async showAlert(message: string, title: string) {
+      const alert = await this.alertController.create({
+        header: title,
+        message: message,
+        buttons: ['OK'],
+      });
+  
       await alert.present();
-      return alert;
-    }
-
+    }  
 }
