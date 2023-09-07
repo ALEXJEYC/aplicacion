@@ -8,7 +8,9 @@ import { HelperService } from 'src/app/services/helper.service';
   templateUrl: './login.page.html',
   styleUrls: ['./login.page.scss'],
 })
+
 export class LoginPage implements OnInit {
+  
 
   email:string = "";
   contrasena:string = "";
@@ -39,6 +41,13 @@ export class LoginPage implements OnInit {
       alert("Crdeneciales no validas.");
     }
     
+  }
+  registrar(){
+    this.router.navigate(['/registrar']);
+  }
+  
+  recuperar(){
+    this.router.navigate(['/recuperar']);
   }
 
 }

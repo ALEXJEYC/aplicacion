@@ -1,0 +1,33 @@
+<!-- confirmar-viaje.page.html -->
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Confirmar Viaje</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/menu"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- Detalles del Viaje -->
+  <ion-card>
+    <ion-card-header>Detalles del Viaje</ion-card-header>
+    <ion-card-content>
+      <p>Origen: {{ origen }}</p>
+      <p>Destino: {{ destino }}</p>
+      <p>Costo Total: {{ costoTotal }}</p>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Selección de Medio de Pago -->
+  <ion-card>
+    <ion-card-header>Selección de Medio de Pago</ion-card-header>
+    <ion-card-content>
+      <!-- Implementa la selección del medio de pago aquí -->
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Botón de Confirmar Viaje -->
+  <ion-button [routerLink]="['/menu-cuatro']" expand="full">Confirmar Viaje</ion-button>
+
+</ion-content>

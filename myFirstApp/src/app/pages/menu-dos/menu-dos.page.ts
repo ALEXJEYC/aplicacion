@@ -1,15 +1,19 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-menu-dos',
   templateUrl: './menu-dos.page.html',
   styleUrls: ['./menu-dos.page.scss'],
 })
-export class MenuDosPage implements OnInit {
+export class MenuDosPage {
+  ubicacionPartida: string = ''; // Define la propiedad 'ubicacionPartida'
+  ubicacionDestino: string = ''; // Define la propiedad 'ubicacionDestino'
+  costoEstimado: number = 0; // Define la propiedad 'costoEstimado'
 
-  constructor() { }
+  constructor(private router:Router) {}
 
-  ngOnInit() {
+  menuSeis(){
+    this.router.navigateByUrl("menu-seis");
   }
-
 }

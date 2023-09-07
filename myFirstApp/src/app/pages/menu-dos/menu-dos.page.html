@@ -1,13 +1,44 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>menuDos</ion-title>
+    <ion-title>SOLICITAR</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/menu"></ion-back-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">menuDos</ion-title>
-    </ion-toolbar>
-  </ion-header>
+
+
+<ion-content>
+  <!-- Barra de búsqueda -->
+  <ion-searchbar placeholder="¿A dónde quieres viajar?" class="search-bar"></ion-searchbar>
+
+  <!-- Mapa -->
+  <div id="map" class="map"></div>
+
+  <!-- Formulario de inicio de viaje -->
+  <ion-card class="start-trip-card">
+    <ion-card-content>
+      <!-- Ubicación de partida -->
+      <ion-item>
+        <ion-label position="floating">Ubicación de Partida</ion-label>
+        <ion-input [(ngModel)]="ubicacionPartida" type="text"></ion-input>
+      </ion-item>
+
+      <!-- Ubicación de destino -->
+      <ion-item>
+        <ion-label position="floating">Ubicación de Destino</ion-label>
+        <ion-input [(ngModel)]="ubicacionDestino" type="text"></ion-input>
+      </ion-item>
+
+      <!-- Estimación de costo total -->
+      <ion-item>
+        <ion-label>Estimación de Costo Total:</ion-label>
+        <ion-label class="estimated-cost">{{ costoEstimado }}</ion-label>
+      </ion-item>
+
+      <!-- Botón de confirmación de viaje -->
+      <ion-button [routerLink]="['/menu-tres']" expand="full" class="start-trip-button">Seleccionar método de pago</ion-button>
+    </ion-card-content>
+  </ion-card>
 </ion-content>

@@ -1,0 +1,17 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Confirmación de Envío</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/recuperar"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding ion-text-center">
+
+  <ion-label><ion-icon name="mail-unread-outline">
+
+  </ion-icon>Revise su bandeja de entrada</ion-label>
+  
+  <ion-button (click)="volver()" expand="full" class="custom-button">Volver</ion-button>
+</ion-content>

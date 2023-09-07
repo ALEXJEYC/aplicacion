@@ -3,59 +3,11 @@
     <ion-button (click)="logOut()" slot="end">
       <ion-icon name="log-out-outline"></ion-icon>
     </ion-button>
-    <ion-title>menu</ion-title>
+    <ion-title>VELOCITO🏁</ion-title>
   </ion-toolbar>
+
+  <ion-button [routerLink]="['/menu-seis']" expand="full">
+    <ion-icon name="person-circle-outline"></ion-icon>CUENTA</ion-button>
+  <ion-button [routerLink]="['/menu-dos']" expand="full">
+    <ion-icon name="car-outline"></ion-icon>EMPEZAR VIAJE </ion-button>
 </ion-header>
-
-<ion-content [fullscreen]="true">
-  <!-- <ion-card (click)="menuUno()">
-    <h3>Menú uno</h3>
-  </ion-card>
-  <ion-card class="cardTwo" (click)="menuDos()">
-    <h3>Menú dos</h3>
-  </ion-card>
-  <ion-card>
-    <h3>Menú tres</h3>
-  </ion-card> -->
-
-  <ng-container *ngIf="!loading">
-    <ng-container *ngFor="let m of menuArray"> 
-      <ion-card [routerLink]="m.url" *ngIf="!m.disabled" class="enabled">
-        <div class="box">
-          <ion-icon [name]="m.icono"></ion-icon>
-          <h3>{{m.titulo}}</h3>
-        </div>
-      </ion-card>
-  
-      <ion-card *ngIf="m.disabled" class="disabled">
-        <div class="box">
-          <ion-icon [name]="m.icono"></ion-icon>
-          <h3>{{m.titulo}}</h3>
-        </div>
-      </ion-card>
-    </ng-container>
-  </ng-container>
-
-
-
-  <ng-container *ngIf="loading">
-    <div class="box-skeleton" *ngFor="let skeleton of [1,2,3]">
-      <ion-skeleton-text [animated]="true" class="skeleton"></ion-skeleton-text>
-    </div>
-  </ng-container>
-
-
-
-
-  <ion-button (click)="play()">
-    Play
-  </ion-button>
-
-  <ion-button (click)="pause()">
-    Pause
-  </ion-button>
-
-  <ion-button (click)="stop()">
-    Stop
-  </ion-button>
-</ion-content>

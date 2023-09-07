@@ -1,0 +1,17 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Confirmación de viaje</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/recuperar"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding ion-text-center">
+
+  <ion-label>
+  <ion-icon name="car-outline"></ion-icon> Gracias por viajar con nosotros, su vehiculo se encuentra en camino.</ion-label>
+  
+  <ion-button (click)="volverAlMenuPrincipal()" expand="full" class="custom-button">Volver al menú principal</ion-button>
+
+</ion-content>

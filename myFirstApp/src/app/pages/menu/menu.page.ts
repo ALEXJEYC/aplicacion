@@ -22,32 +22,6 @@ export class MenuPage implements OnInit, OnDestroy {
     private animationCtrl: AnimationController
     ) { }
 
-
-
-    cargarMenu(){
-      var par = 456;
-      this.menuArray.push(
-        { 
-          id:1,
-          titulo:"Menú uno",
-          url:"/" + par + "/menu-uno",
-          icono:"desktop-outline",
-        },
-        { 
-          id:2,
-          titulo:"Menú dos",
-          url:"/menu-dos",
-          icono:"partly-sunny-outline",
-          disabled:true
-        },
-      );
-    }
-    
-
-   
-
-
-
     ngAfterViewInit() {
       this.animation = this.animationCtrl
         .create()
@@ -60,18 +34,6 @@ export class MenuPage implements OnInit, OnDestroy {
 
 
     
-    play(){
-      this.animation.play();
-    }
-
-    pause(){
-      this.animation.pause();
-    }
-
-    stop(){
-      this.animation.stop();
-    }
-
 
 
   ngOnDestroy(): void {
@@ -79,7 +41,6 @@ export class MenuPage implements OnInit, OnDestroy {
   }
 
   ngOnInit() {
-    this.cargarMenu();
     console.table(this.menuArray);
     console.error("Soy un error!!!!")    
     console.log("inicio del componente");
@@ -110,13 +71,14 @@ export class MenuPage implements OnInit, OnDestroy {
 
 
   menuUno(){
-    var parametroN1 = 123456;
-    this.router.navigateByUrl(parametroN1 + "/menu-uno");
+    this.router.navigateByUrl("menu-uno");
   }
 
   menuDos(){
-    var nom = "pgy4121";
     this.router.navigateByUrl("menu-dos");
+  }
+  menuSeis(){
+    this.router.navigateByUrl("menu-seis");
   }
 
 }

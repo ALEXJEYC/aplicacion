@@ -20,12 +20,38 @@ const routes: Routes = [
     loadChildren: () => import('./pages/menu/menu.module').then( m => m.MenuPageModule)
   },
   {
-    path: ':num/menu-uno',
-    loadChildren: () => import('./pages/menu-uno/menu-uno.module').then( m => m.MenuUnoPageModule)
-  },  {
     path: 'menu-dos',
     loadChildren: () => import('./pages/menu-dos/menu-dos.module').then( m => m.MenuDosPageModule)
   },
+  {
+    path: 'registrar',
+    loadChildren: () => import('./pages/registrar/registrar.module').then( m => m.RegistrarPageModule)
+  },
+  {
+    path: 'recuperar',
+    loadChildren: () => import('./pages/recuperar/recuperar.module').then( m => m.RecuperarPageModule)
+  },
+  {
+    path: 'revisar',
+    loadChildren: () => import('./pages/revisar/revisar.module').then( m => m.RevisarPageModule)
+  },
+  {
+    path: 'menu-tres',
+    loadChildren: () => import('./pages/menu-tres/menu-tres.module').then( m => m.MenuTresPageModule)
+  },
+  {
+    path: 'menu-cuatro',
+    loadChildren: () => import('./pages/menu-cuatro/menu-cuatro.module').then( m => m.MenuCuatroPageModule)
+  },
+  {
+    path: 'menu-cinco',
+    loadChildren: () => import('./pages/menu-cinco/menu-cinco.module').then( m => m.MenuCincoPageModule)
+  },
+  {
+    path: 'menu-seis',
+    loadChildren: () => import('./pages/menu-seis/menu-seis.module').then( m => m.MenuSeisPageModule)
+  },
+
 
 
 
