@@ -1,42 +1,41 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>MI PERFIL  <ion-icon name="person-outline"></ion-icon> </ion-title>
+    <ion-title>MI PERFIL  <ion-icon name="person-outline"></ion-icon></ion-title>
     <ion-buttons slot="start">
       <ion-back-button defaultHref="/menu"></ion-back-button>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
-
-
-<ion-content class="ion-padding">
-  <ion-img src="assets/icon/usuario.png" class="user-image"></ion-img>
-  
-  <ion-list>
-    <!-- Nombre del usuario -->
-    <ion-item>
-      <ion-label slot="start">Nombre:</ion-label>
-      <ion-label class="user-name">Nombre de Usuario</ion-label>
-    </ion-item>
-
-    <!-- Correo electrónico del usuario -->
-    <ion-item>
-      <ion-label slot="start">Correo:</ion-label>
-      <ion-label class="user-email">correo@example.com</ion-label>
-    </ion-item>
-
-    <!-- Edad del usuario -->
-    <ion-item>
-      <ion-label slot="start">Edad:</ion-label>
-      <ion-label class="user-age">30 años</ion-label>
-    </ion-item>
-
-    <!-- Ubicación del usuario -->
-    <ion-item>
-      <ion-label slot="start">Ubicación:</ion-label>
-      <ion-label class="user-location">Ciudad, País</ion-label>
-    </ion-item>
-  </ion-list>
-  <ion-button (click)="menu()" expand="full">Actualizar Información</ion-button>
-  <ion-button (click)="menu()" expand="full">Ver Historial de Viajes</ion-button>
-  <ion-button (click)="menu()" expand="full">Configurar Medio de Pago</ion-button>
+<ion-content>
+    <ion-card> 
+      <ion-card-content>
+        <ion-img src="assets/icon/usuario.png" class="user-image"></ion-img>
+        
+        <ion-list>
+          <ion-item>
+            <ion-label slot="start">Nombre:</ion-label>
+            <ion-label class="user-name">Nombre de Usuario</ion-label>
+          </ion-item>
+          
+          <ion-item>
+            <ion-label slot="start">Correo:</ion-label>
+            <ion-label class="user-email">correo@example.com</ion-label>
+          </ion-item>
+          
+          <ion-item>
+            <ion-label slot="start">Edad:</ion-label>
+            <ion-label class="user-age">30 años</ion-label>
+          </ion-item>
+          
+          <ion-item>
+            <ion-label slot="start">Ubicación:</ion-label>
+            <ion-label class="user-location">Ciudad, País</ion-label>
+          </ion-item>
+        </ion-list >
+        
+        <ion-button (click)="menu()" color="miscolores" expand="full">Actualizar Información</ion-button>
+        <ion-button (click)="menu()" color="miscolores" expand="full">Ver Historial de Viajes</ion-button>
+        <ion-button (click)="menu()" color="miscolores" expand="full">Configurar Medio de Pago</ion-button>
+      </ion-card-content>
+    </ion-card>
 </ion-content>

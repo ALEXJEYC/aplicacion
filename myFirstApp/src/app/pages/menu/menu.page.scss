@@ -1,33 +1,17 @@
-.box{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-left: 20px;
-    padding-right: 20px;
-
+ion-card{
+    max-width: 500px;
+    margin: auto;
+    margin-top: 150px;
 }
 
-ion-icon{
-    font-size: 50px;
+ion-item{
+    margin-bottom: 20px;
 }
 
-.enabled{
-    background-color: green;
-    color: white;
+ion-button{
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
-
-.disabled{
-    background-color: red;
-    color: white;
-    opacity: 0.5;
-}
-
-
-.skeleton{
-    height: 55px;
-}
-
-.box-skeleton{
-    padding-left: 10px;
-    padding-right: 10px;
+ion-button{
+    background-color: var(--ion-color-miscolores);
 }

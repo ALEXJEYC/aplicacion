@@ -1,13 +1,21 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-button (click)="logOut()" slot="end">
+    <ion-button color="miscolores" (click)="logOut()" slot="end">
       <ion-icon name="log-out-outline"></ion-icon>
     </ion-button>
     <ion-title>VELOCITO🏁</ion-title>
   </ion-toolbar>
-
-  <ion-button [routerLink]="['/menu-seis']" expand="full">
-    <ion-icon name="person-circle-outline"></ion-icon>CUENTA</ion-button>
-  <ion-button [routerLink]="['/menu-dos']" expand="full">
-    <ion-icon name="car-outline"></ion-icon>EMPEZAR VIAJE </ion-button>
 </ion-header>
+
+<ion-content>
+  <ion-card> 
+    <ion-card-content>
+      <ion-button color="miscolores" [routerLink]="['/menu-seis']" expand="full">
+        <ion-icon name="person-circle-outline"></ion-icon>CUENTA
+      </ion-button>
+      <ion-button color="miscolores" [routerLink]="['/menu-dos']" expand="full">
+        <ion-icon name="car-outline"></ion-icon>EMPEZAR VIAJE
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

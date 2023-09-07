@@ -7,11 +7,14 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content class="ion-padding ion-text-center">
-
-  <ion-label>
-  <ion-icon name="car-outline"></ion-icon> Gracias por viajar con nosotros, su vehiculo se encuentra en camino.</ion-label>
-  
-  <ion-button (click)="volverAlMenuPrincipal()" expand="full" class="custom-button">Volver al menú principal</ion-button>
-
+<ion-content>
+  <ion-card> 
+    <ion-card-content>
+      <ion-label>
+        <ion-icon name="car-outline"></ion-icon> Gracias por viajar con nosotros, su vehiculo se encuentra en camino.</ion-label>
+        
+        <ion-button color="miscolores" (click)="volverAlMenuPrincipal()" expand="full" class="custom-button">Volver al menú principal</ion-button>
+      
+    </ion-card-content>
+  </ion-card>
 </ion-content>

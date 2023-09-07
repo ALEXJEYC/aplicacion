@@ -74,6 +74,15 @@
   --ion-color-light-contrast-rgb: 0, 0, 0;
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
+  
+
+  /** miscolores **/
+	--ion-color-miscolores: #3f8d50;
+	--ion-color-miscolores-rgb: 63,141,80;
+	--ion-color-miscolores-contrast: #ffffff;
+	--ion-color-miscolores-contrast-rgb: 255,255,255;
+	--ion-color-miscolores-shade: #377c46;
+	--ion-color-miscolores-tint: #529862;
 }
 
 @media (prefers-color-scheme: dark) {
